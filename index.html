@@ -1,145 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pravach Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-    <style>
-.bg-img {
-  height: 100vh;
-  background-image: url("photo.jpeg");
-  background-size: cover;
-  background-position: 70% 25%;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  padding-top: 120px;
-}
-h1 {
-  font-family: 'Montserrat', sans-serif;
-}
-body {
-  font-family: 'Poppins', sans-serif;
-}
-    </style>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .bg-img {
+      min-height: 100vh;
+      background-image: url("photo.jpeg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      padding-top: 100px;
+    }
+  </style>
 </head>
 <body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container-fluid">
-    
-    <a class="navbar-brand fw-bold fs-4 ms-5 " href="#"><span class="text-danger">P</span>ravach.</a>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold fs-4" href="#"><span class="text-danger">P</span>ravach.</a>
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-
     <div class="collapse navbar-collapse" id="mynavbar">
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item">
-          <a class="nav-link active" href="#home">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#about">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#projects">Projects</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact">Contact</a>
-        </li>
+        <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
       </ul>
     </div>
-
   </div>
 </nav>
 
-
-<div class="bg-img d-flex flex-column align-items-start ps-5 pt-5">
-
-<div id="home" style="margin-top: 100px;">
-  
-  <p class="fs-5 mb-2 text-white fw-bold ms-5">FullStack Developer!</p>
-
-  <h1 class="display-5 fw-bold text-white">
-    <span class="text-danger">H</span>i, I am Pravach.<br>
-    <span class="text-danger">A</span> passionate FullStack <br><span class="ms-5"><span class="text-danger">D</span>eveloper</span>
-  </h1>
+<!-- HERO -->
+<div class="bg-img d-flex align-items-center" id="home">
+  <div class="container text-white">
+    <p class="fs-5 fw-bold">FullStack Developer!</p>
+    <h1 class="display-5 fw-bold">
+      <span class="text-danger">H</span>i, I am Pravach.<br>
+      <span class="text-danger">A</span> passionate FullStack<br>
+      <span class="text-danger">D</span>eveloper
+    </h1>
   </div>
-  </div>
+</div>
 
-  <div id="about" class="container-fluid bg-black text-white p-4 ms-0 d-flex flex-column justify-content-center align-items-center p-4">
-    <div style="width: 500px;height: 400px;" class="mt-5">
-    <h1 class="text-white text-center"><span class="text-danger">A</span>bout <span class="text-danger">M</span>e</h1><hr class="text-danger">
-    <p class="text-white">I am a passionate and dedicated software developer with an<span class="text-danger"> MCA </span>degree from Bangalore University (2025) and a BCA degree completed in 2023. I have strong hands-on experience in building responsive and user-friendly web applications using<span class="text-danger"> HTML, CSS, JavaScript, MySQL, Python, C, and Java</span>.
-        I am proficient in modern frameworks such as <span class="text-danger">Bootstrap </span> and <span class="text-danger">Django </span>, and I enjoy creating clean, efficient, and scalable solutions. I am a quick learner with a strong problem-solving mindset and a deep interest in full-stack development.
-        My goal is to continuously improve my skills while contributing to innovative projects that make a real-world impact.</p>
+<!-- ABOUT -->
+<div id="about" class="container-fluid bg-black text-white py-5">
+  <div class="container d-flex justify-content-center">
+    <div class="w-100" style="max-width:600px;">
+      <h1 class="text-center"><span class="text-danger">A</span>bout <span class="text-danger">M</span>e</h1>
+      <hr class="text-danger">
+      <p>
+        I am a passionate and dedicated software developer with an <span class="text-danger">MCA</span> degree from Bangalore University (2025) and a BCA degree completed in 2023.
+        I have strong hands-on experience in building responsive and user-friendly web applications using 
+        <span class="text-danger">HTML, CSS, JavaScript, MySQL, Python, C, and Java</span>.
+        I am proficient in modern frameworks such as <span class="text-danger">Bootstrap</span> and <span class="text-danger">Django</span>.
+      </p>
+    </div>
   </div>
-  </div>
+</div>
 
-  <div id="projects" class="container-fluid bg-black py-5">
-  <div class="container text-white" >
-    
+<!-- PROJECTS -->
+<div id="projects" class="container-fluid bg-black py-5">
+  <div class="container text-white">
     <h1 class="text-center mb-4"><span class="text-danger">M</span>y <span class="text-danger">P</span>rojects</h1>
-    <p class="text-center mb-5 text-white">
-      Here are some of the projects I have built using modern technologies.
-    </p>
+    <p class="text-center mb-5">Here are some of the projects I have built.</p>
 
     <div class="row g-4">
 
-      <!-- Project 1 -->
-      <div class="col-md-4">
-        <div class="card h-100 shadow bg-black border border-danger border-5">
+      <div class="col-12 col-md-4">
+        <div class="card h-100 bg-black border border-danger border-3">
           <div class="card-body">
-            <h5 class="card-title text-danger">Palliative System Management</h5>
-            <p class="card-text text-white">
-              Palliative Service System is a web application that designed for palliative services.This application is for the old age patients.This application provides several services like Doctors,Ambulance,Home nurse,Medicines.This is mainly used for ensuring the medical care for the old age peoples.It was developed using python,SQLite,PyCharm and Python Django framework.
-            <p class="text-white"><strong class="text-danger">Technologies:</strong> HTML, CSS, Bootstrap, Django, MySQL</p>
+            <h5 class="text-danger">Palliative System Management</h5>
+            <p class="text-white">Web application for palliative services using Django.</p>
+            <p class="text-white"><strong class="text-danger">Tech:</strong> HTML, CSS, Bootstrap, Django, MySQL</p>
           </div>
         </div>
       </div>
 
-      <!-- Project 2 -->
-      <div class="col-md-4">
-        <div class="card h-100 shadow bg-black border border-danger border-5">
+      <div class="col-12 col-md-4">
+        <div class="card h-100 bg-black border border-danger border-3">
           <div class="card-body">
-            <h5 class="card-title text-danger">Portfolio Website</h5>
-            <p class="card-text text-white">
-              A personal portfolio website showcasing my skills, projects, and contact details.
-            </p>
-            <p class="text-white"><strong class="text-danger">Technologies:</strong> HTML, CSS, JavaScript, Bootstrap</p>
-
+            <h5 class="text-danger">Portfolio Website</h5>
+            <p class="text-white">Personal portfolio website.</p>
+            <p class="text-white"><strong class="text-danger">Tech:</strong> HTML, CSS, JS, Bootstrap</p>
           </div>
         </div>
       </div>
 
-      <!-- Project 3 -->
-      <div class="col-md-4">
-        <div class="card h-100 shadow bg-black border border-danger border-5">
+      <div class="col-12 col-md-4">
+        <div class="card h-100 bg-black border border-danger border-3">
           <div class="card-body">
-            <h5 class="card-title text-danger">Royal Build</h5>
-            <p class="card-text text-white">
-              “Royal Build” is an innovative digital solution developed for Royal Associates, a leading player in the brick manufacturing industry. This platform is built using the Python Django framework, aiming to modernize traditional operations by digitizing key processes and offering a user-friendly online experience for both customers and internal staff. 
-            </p>
-            <p class="text-white"><strong class="text-danger">Technologies:</strong> Python, Django, MySQL,HTML,CSS,JavaScript</p>
-            </a>
+            <h5 class="text-danger">Royal Build</h5>
+            <p class="text-white">Digital solution for brick manufacturing industry.</p>
+            <p class="text-white"><strong class="text-danger">Tech:</strong> Python, Django, MySQL</p>
           </div>
         </div>
       </div>
 
-      <div class="col-md-4">
-        <div class="card h-100 shadow bg-black border border-danger border-5">
+      <div class="col-12 col-md-4">
+        <div class="card h-100 bg-black border border-danger border-3">
           <div class="card-body">
-            <h5 class="card-title text-danger">Agni Jewels</h5>
-            <p class="card-text text-white">
-              An online shopping platform for a Jewellery in calicult in which I did the front-end part.It has Home page,Products,Cart etc.
-            </p>
-            <p class="text-white"><strong class="text-danger">Technologies:</strong> Next.js</p>
-        
+            <h5 class="text-danger">Agni Jewels</h5>
+            <p class="text-white">Jewellery shopping platform.</p>
+            <p class="text-white"><strong class="text-danger">Tech:</strong> Next.js</p>
           </div>
         </div>
       </div>
@@ -148,50 +126,34 @@ body {
   </div>
 </div>
 
+<!-- CONTACT -->
 <div id="contact" class="container-fluid bg-dark text-white py-5">
   <div class="container">
-    
-    <h1 class="text-center mb-4">
-      <span class="text-danger">C</span>ontact <span class="text-danger">M</span>e
-    </h1>
-    <p class="text-center text-secondary mb-5">
-      Feel free to reach out for projects, jobs, or collaborations.
-    </p>
+    <h1 class="text-center mb-4"><span class="text-danger">C</span>ontact <span class="text-danger">M</span>e</h1>
 
     <div class="row">
-      
-      <!-- Contact Info -->
-    <div id="contact" class="d-flex">
-      <div class="col-md-5 mb-4">
-  <h4>Get In Touch</h4>
-  <p>📧 Email: pravachkumar@gmail.com</p>
-  <p>📞 Phone: +91 8138098994</p>
-  <p>📍 Location: Kerala, India.</p>
+      <div class="col-12 col-md-5 mb-4">
+        <h4>Get In Touch</h4>
+        <p>📧 Email: pravachkumar@gmail.com</p>
+        <p>📞 Phone: +91 8138098994</p>
+        <p>📍 Kerala, India.</p>
+      </div>
+
+      <div class="col-12 col-md-7">
+        <form onsubmit="openGmail(event)">
+          <input type="text" id="name" class="form-control mb-3" placeholder="Your Name" required>
+          <input type="email" id="email" class="form-control mb-3" placeholder="Your Email" required>
+          <textarea id="message" class="form-control mb-3" rows="4" placeholder="Your Message" required></textarea>
+          <button type="submit" class="btn btn-danger">Send Mail</button>
+        </form>
+      </div>
+    </div>
+  </div>
 </div>
 
-<div class="col-md-7">
-  <form onsubmit="openGmail(event)">
-    <div class="mb-3">
-      <input type="text" id="name" class="form-control" placeholder="Your Name" required>
-    </div>
-
-    <div class="mb-3">
-      <input type="email" id="email" class="form-control" placeholder="Your Email" required>
-    </div>
-
-    <div class="mb-3">
-      <textarea id="message" class="form-control" rows="4" placeholder="Your Message" required></textarea>
-    </div>
-
-    <button type="submit" class="btn btn-danger">Send Mail</button>
-  </form>
-</div>
-
-</div>
 <script>
 function openGmail(e) {
-  e.preventDefault(); // stop page reload
-
+  e.preventDefault();
   let name = document.getElementById("name").value;
   let email = document.getElementById("email").value;
   let message = document.getElementById("message").value;
@@ -199,17 +161,11 @@ function openGmail(e) {
   let gmailURL = "https://mail.google.com/mail/?view=cm&fs=1"
     + "&to=pravachkumar@gmail.com"
     + "&su=Contact from Portfolio"
-    + "&body="
-    + "Name: " + encodeURIComponent(name) + "%0D%0A"
-    + "Email: " + encodeURIComponent(email) + "%0D%0A%0D%0A"
-    + encodeURIComponent(message);
+    + "&body=" + "Name: " + name + "%0D%0AEmail: " + email + "%0D%0A%0D%0A" + message;
 
   window.open(gmailURL, "_blank");
 }
 </script>
-
-
-
 
 </body>
 </html>
